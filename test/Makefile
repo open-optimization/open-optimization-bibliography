@@ -9,7 +9,11 @@ LATEXMK_OPTIONS = -pdf -g -f
 # Omit -Werror because latexmk 1:4.41-1 on GitHub runner (2019-12-17) does not understand it
 # Omit --quiet for better debuggability
 
-check: check-encoding check-bibtex check-biblatex
+check: check-bib
+
+.PHONY: check check-bib
+
+check-bib: check-encoding check-bibtex check-biblatex
 
 BIBFILES = cutgeneratingfunctionology.bib
 
