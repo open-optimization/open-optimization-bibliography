@@ -35,4 +35,4 @@ check-biblatex-ext:
 	@if grep -i 'Warning\|Error' $@.log; then echo "Biber produces warnings"; exit 1; fi
 
 clean:
-	rm -f *.aux *.bbl *.bcf *.blg *.fdb* *.fls *.log *.out *.run.xml *.bak bibliography-bibtex.pdf bibliography-biblatex.pdf
+	rm -f *.aux *.bbl *.bcf *.blg *.fdb* *.fls *.log *.out *.run.xml *.bak bibliography-bibtex.pdf bibliography-biblatex.pdf bibliography-biblatex-ext.pdf
