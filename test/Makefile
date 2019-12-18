@@ -15,7 +15,7 @@ check: check-bib
 
 check-bib: check-encoding check-bibtex check-biblatex
 
-BIBFILES = cutgeneratingfunctionology.bib
+BIBFILES = ../bib/cutgeneratingfunctionology.bib
 
 check-encoding:
 	@if LC_ALL=C grep -H -v -n '^[ -~]*$$' $(BIBFILES) ; then echo "Offending characters found."; exit 1; else echo "bib files are ASCII and have no tabs and no ^Ms. Good."; exit 0; fi
