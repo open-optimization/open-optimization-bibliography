@@ -1,2 +1,4 @@
 # open-optimization-bibliography
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/open-optimization/open-optimization-bibliography/CI-check-bib?label=CI-check-bib)
+
 A repository dedicated to collecting references and storing them in a convenient way
